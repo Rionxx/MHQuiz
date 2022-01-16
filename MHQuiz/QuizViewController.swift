@@ -36,10 +36,34 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //if Pushed Button Action function
     @IBAction func btnAction(sender: UIButton) {
-        print(sender.tag)
+        if sender.tag == Int(quizArray[1]) {
+            print("正解")
+        } else {
+            print("不正解")
+        }
+        nextQuiz()
     }
-
+    
+    //next step quiz function
+    func nextQuiz() {
+        quizCount += 1
+        if quizCount < csvArray.count {
+            quizArray = csvArray[quizCount].components(separatedBy: ",")
+            
+            quizNumberLabel.text = "第\(quizCount + 1)門"
+            quizTextView.text = quizArray[0]
+            answerButton1.setTitle(quizArray[2], for: .normal)
+            answerButton2.setTitle(quizArray[3], for: .normal)
+            answerButton3.setTitle(quizArray[4], for: .normal)
+            answerButton4.setTitle(quizArray[5], for: .normal)
+        } else {
+            performSegue(withIdentifier: "toScoreVC", sender: nil)
+        }
+    }
+    
+    
     //load csv file function
     func loadCSV(filename: String) -> [String] {
         let csvBundle = Bundle.main.path(forResource: filename, ofType: "csv")!
