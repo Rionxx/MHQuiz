@@ -8,11 +8,21 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
-
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var correct = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        scoreLabel.text = "\(correct)問正解!"
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func roTopButtonAction(_ sender: Any) {
+        //close Score View and Quiz View
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
 
