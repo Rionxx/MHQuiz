@@ -14,6 +14,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
+    @IBOutlet weak var judgeImageView: UIImageView!
     
     var csvArray: [String] = []
     var quizArray: [String] = []
@@ -48,11 +49,27 @@ class QuizViewController: UIViewController {
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
             correctCount += 1
+            judgeImageView.image = UIImage(named: "correct")
         } else {
             print("不正解")
+            judgeImageView.image = UIImage(named: "incorrect")
         }
+        
         print("スコア:\(correctCount)")
-        nextQuiz()
+        //after 0.5 image is hidden
+        judgeImageView.isHidden = false
+        answerButton1.isEnabled = false
+        answerButton2.isEnabled = false
+        answerButton3.isEnabled = false
+        answerButton4.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.judgeImageView.isHidden = true
+            self.answerButton1.isEnabled = true
+            self.answerButton2.isEnabled = true
+            self.answerButton3.isEnabled = true
+            self.answerButton4.isEnabled = true
+            self.nextQuiz()
+        }
     }
     
     //next step quiz function
