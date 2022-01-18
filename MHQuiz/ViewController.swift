@@ -10,11 +10,15 @@ import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var image: UIImageView!
+    
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let iconImage = UIImage(named: "icon.png")
+        image.image = iconImage
     }
 
     //start Button Action Sound

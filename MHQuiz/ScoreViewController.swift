@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import AVFAudio
 
 class ScoreViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
+    var player: AVAudioPlayer?
     
     var correct = 0
     
@@ -16,6 +18,27 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
         
         scoreLabel.text = "\(correct)問正解!"
+        
+        //Audio Play
+        if correct > 0 {
+            if let soundURL = Bundle.main.url(forResource: "score", withExtension: "mp3") {
+                do {
+                    player = try AVAudioPlayer(contentsOf: soundURL)
+                    player?.play()
+                } catch {
+                    print("error")
+                }
+            }
+        } else {
+            if let soundZeroURL = Bundle.main.url(forResource: "zero", withExtension: "mp3") {
+                do {
+                    player = try AVAudioPlayer(contentsOf: soundZeroURL)
+                    player?.play()
+                } catch {
+                    print("error")
+                }
+            }
+        }
         
         // Do any additional setup after loading the view.
     }

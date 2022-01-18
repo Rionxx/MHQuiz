@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA06FA26279697FA00E27A2A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA06FA25279697FA00E27A2A /* icon.png */; };
+		EA06FA28279699D500E27A2A /* score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA06FA27279699D500E27A2A /* score.mp3 */; };
+		EA06FA2A27969C4900E27A2A /* zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA06FA2927969C4900E27A2A /* zero.mp3 */; };
 		EA6C877A2793A54400576B34 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C87792793A54400576B34 /* QuizViewController.swift */; };
 		EA6C877C2793A75E00576B34 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C877B2793A75E00576B34 /* ScoreViewController.swift */; };
 		EA6C877E2793A7AF00576B34 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C877D2793A7AF00576B34 /* SelectViewController.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA06FA25279697FA00E27A2A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/icon.png; sourceTree = "<group>"; };
+		EA06FA27279699D500E27A2A /* score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = score.mp3; sourceTree = "<group>"; };
+		EA06FA2927969C4900E27A2A /* zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zero.mp3; sourceTree = "<group>"; };
 		EA6C87792793A54400576B34 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		EA6C877B2793A75E00576B34 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		EA6C877D2793A7AF00576B34 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		EA6C87852795C4BD00576B34 /* ImageData */ = {
 			isa = PBXGroup;
 			children = (
+				EA06FA25279697FA00E27A2A /* icon.png */,
 				EA6C87812795C48300576B34 /* incorrect.png */,
 				EA6C87822795C48300576B34 /* correct.png */,
 			);
@@ -111,8 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				EA6C878B2795D0B000576B34 /* soundstart.mp3 */,
+				EA06FA27279699D500E27A2A /* score.mp3 */,
 				EA6C87872795CC4E00576B34 /* correctsound.mp3 */,
 				EA6C87892795CC7700576B34 /* incorrectsound.mp3 */,
+				EA06FA2927969C4900E27A2A /* zero.mp3 */,
 			);
 			path = SoundData;
 			sourceTree = "<group>";
@@ -284,13 +293,16 @@
 				EA87C90C279314D700BFB711 /* LaunchScreen.storyboard in Resources */,
 				EA6C878A2795CC7700576B34 /* incorrectsound.mp3 in Resources */,
 				EA6C87842795C48300576B34 /* correct.png in Resources */,
+				EA06FA2A27969C4900E27A2A /* zero.mp3 in Resources */,
 				EA895CE627963748006C96D0 /* quiz2.csv in Resources */,
 				EA87C909279314D700BFB711 /* Assets.xcassets in Resources */,
 				EA87C907279314D600BFB711 /* Main.storyboard in Resources */,
 				EA895CE82796375B006C96D0 /* quiz3.csv in Resources */,
+				EA06FA26279697FA00E27A2A /* icon.png in Resources */,
 				EA6C878C2795D0B000576B34 /* soundstart.mp3 in Resources */,
 				EA6C87802793ADB200576B34 /* quiz1.csv in Resources */,
 				EA6C87882795CC4E00576B34 /* correctsound.mp3 in Resources */,
+				EA06FA28279699D500E27A2A /* score.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
