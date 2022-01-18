@@ -10,7 +10,7 @@
 		EA6C877A2793A54400576B34 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C87792793A54400576B34 /* QuizViewController.swift */; };
 		EA6C877C2793A75E00576B34 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C877B2793A75E00576B34 /* ScoreViewController.swift */; };
 		EA6C877E2793A7AF00576B34 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C877D2793A7AF00576B34 /* SelectViewController.swift */; };
-		EA6C87802793ADB200576B34 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = EA6C877F2793ADB200576B34 /* quiz.csv */; };
+		EA6C87802793ADB200576B34 /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = EA6C877F2793ADB200576B34 /* quiz1.csv */; };
 		EA6C87832795C48300576B34 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6C87812795C48300576B34 /* incorrect.png */; };
 		EA6C87842795C48300576B34 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6C87822795C48300576B34 /* correct.png */; };
 		EA6C87882795CC4E00576B34 /* correctsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA6C87872795CC4E00576B34 /* correctsound.mp3 */; };
@@ -25,6 +25,8 @@
 		EA87C917279314D800BFB711 /* MHQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C916279314D800BFB711 /* MHQuizTests.swift */; };
 		EA87C921279314D800BFB711 /* MHQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C920279314D800BFB711 /* MHQuizUITests.swift */; };
 		EA87C923279314D800BFB711 /* MHQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C922279314D800BFB711 /* MHQuizUITestsLaunchTests.swift */; };
+		EA895CE627963748006C96D0 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = EA895CE527963748006C96D0 /* quiz2.csv */; };
+		EA895CE82796375B006C96D0 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = EA895CE72796375B006C96D0 /* quiz3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		EA6C87792793A54400576B34 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		EA6C877B2793A75E00576B34 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		EA6C877D2793A7AF00576B34 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
-		EA6C877F2793ADB200576B34 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		EA6C877F2793ADB200576B34 /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
 		EA6C87812795C48300576B34 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		EA6C87822795C48300576B34 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		EA6C87872795CC4E00576B34 /* correctsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctsound.mp3; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		EA87C91C279314D800BFB711 /* MHQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA87C920279314D800BFB711 /* MHQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHQuizUITests.swift; sourceTree = "<group>"; };
 		EA87C922279314D800BFB711 /* MHQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA895CE527963748006C96D0 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
+		EA895CE72796375B006C96D0 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +147,9 @@
 				EA6C87792793A54400576B34 /* QuizViewController.swift */,
 				EA6C877B2793A75E00576B34 /* ScoreViewController.swift */,
 				EA87C905279314D600BFB711 /* Main.storyboard */,
-				EA6C877F2793ADB200576B34 /* quiz.csv */,
+				EA6C877F2793ADB200576B34 /* quiz1.csv */,
+				EA895CE527963748006C96D0 /* quiz2.csv */,
+				EA895CE72796375B006C96D0 /* quiz3.csv */,
 				EA87C908279314D700BFB711 /* Assets.xcassets */,
 				EA6C87862795CC3800576B34 /* SoundData */,
 				EA6C87852795C4BD00576B34 /* ImageData */,
@@ -278,10 +284,12 @@
 				EA87C90C279314D700BFB711 /* LaunchScreen.storyboard in Resources */,
 				EA6C878A2795CC7700576B34 /* incorrectsound.mp3 in Resources */,
 				EA6C87842795C48300576B34 /* correct.png in Resources */,
+				EA895CE627963748006C96D0 /* quiz2.csv in Resources */,
 				EA87C909279314D700BFB711 /* Assets.xcassets in Resources */,
 				EA87C907279314D600BFB711 /* Main.storyboard in Resources */,
+				EA895CE82796375B006C96D0 /* quiz3.csv in Resources */,
 				EA6C878C2795D0B000576B34 /* soundstart.mp3 in Resources */,
-				EA6C87802793ADB200576B34 /* quiz.csv in Resources */,
+				EA6C87802793ADB200576B34 /* quiz1.csv in Resources */,
 				EA6C87882795CC4E00576B34 /* correctsound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

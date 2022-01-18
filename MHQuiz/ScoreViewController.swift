@@ -22,7 +22,7 @@ class ScoreViewController: UIViewController {
     
     @IBAction func roTopButtonAction(_ sender: Any) {
         //close Score View and Quiz View
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
     
 

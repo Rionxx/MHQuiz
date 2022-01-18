@@ -33,7 +33,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZ7-7i-x33"/>
-                                    <segue destination="ksq-y1-m6u" kind="presentation" id="XIB-gT-w9u"/>
+                                    <segue destination="nHW-ve-I3h" kind="presentation" id="c1E-uh-SCP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="117"/>
+            <point key="canvasLocation" x="-893" y="120"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="vsz-YC-c97">
@@ -180,7 +180,7 @@
         <!--Select View Controller-->
         <scene sceneID="Onv-VC-8Oe">
             <objects>
-                <viewController id="nHW-ve-I3h" customClass="SelectViewController" customModule="MHQuiz" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nHW-ve-I3h" customClass="SelectViewController" customModule="MHQuiz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKw-ZM-HI2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,38 +195,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-aF-jOR">
-                                <rect key="frame" x="131" y="346" width="152" height="68"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-aF-jOR">
+                                <rect key="frame" x="57" y="373" width="300" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="鳥竜種・魚竜種">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="nHW-ve-I3h" eventType="touchUpInside" id="sYg-SO-9Tu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFP-Fw-Foe">
-                                <rect key="frame" x="131" y="422" width="152" height="68"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH5-gE-6Pa">
+                                <rect key="frame" x="57" y="501" width="300" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="飛竜種">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="nHW-ve-I3h" eventType="touchUpInside" id="3p3-UX-Mwh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTd-5u-GYO">
-                                <rect key="frame" x="131" y="498" width="152" height="68"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-Yb-4gU">
+                                <rect key="frame" x="57" y="629" width="300" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                <buttonConfiguration key="configuration" style="plain" title="古龍種">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="nHW-ve-I3h" eventType="touchUpInside" id="WiM-1I-ZVk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ccw-lw-G3d"/>
                         <color key="backgroundColor" red="0.043137254901960784" green="0.86274509803921573" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="ksq-y1-m6u" kind="presentation" identifier="toQuizVC" id="BP4-8B-2pq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knx-pN-Xwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-710"/>
+            <point key="canvasLocation" x="143" y="139"/>
         </scene>
     </scenes>
     <resources>
